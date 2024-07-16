@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="prasath.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Basic work flow Test(failed)">
+    <classes>
+      <class name="prasath.Testcase.BasicflowTest">
+        <methods>
+          <include name="completePurchase"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- prasath.Testcase.BasicflowTest -->
+    </classes>
+  </test> <!-- Basic work flow Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
